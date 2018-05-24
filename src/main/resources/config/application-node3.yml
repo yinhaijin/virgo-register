@@ -1,0 +1,13 @@
+server:
+  port: 8889
+eureka:
+  instance:
+    hostname: regserver
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://127.0.0.1:8887/eureka/,http://127.0.0.1:8888/eureka/
+spring:
+  application:
+    name: virgo-register
